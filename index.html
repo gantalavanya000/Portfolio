@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ganta Lavanya | Portfolio</title>
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: #58a6ff;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #ffb703;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(to right, #0a192f, #112240);
+      color: #fff;
+      padding: 2.5rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      font-size: 2.7rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.6rem;
+      opacity: 0.85;
+    }
+
+    /* Navbar */
+    nav {
+      background: #161b22;
+      padding: 0.8rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid #30363d;
+    }
+
+    nav a {
+      margin: 0 18px;
+      font-weight: bold;
+      color: #e6edf3;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #58a6ff;
+    }
+
+    /* Sections */
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #ffb703;
+      font-size: 2rem;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #58a6ff;
+      margin: 0.6rem auto 0;
+      border-radius: 3px;
+    }
+
+    /* Grid Sections */
+    .skills, .projects, .experience, .education, .certificates {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #161b22;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      border: 1px solid #30363d;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.8), 0 0 12px #58a6ff44;
+    }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    .contact a {
+      color: #58a6ff;
+    }
+
+    /* Footer */
+    footer {
+      background: #0a192f;
+      color: #aaa;
+      text-align: center;
+      padding: 1.2rem;
+      margin-top: 2rem;
+      border-top: 1px solid #30363d;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Ganta Lavanya</h1>
+    <p>Software Engineering Student | Full-Stack Developer | ML Enthusiast</p>
+    <p>📍 Visakhapatnam, AP | 📧 lavanyaganta0000@gmail.com | 📞 +91 9640864079</p>
+    <p><a href="https://linkedin.com/in/ganta-lavanya-4867542b2" target="_blank">LinkedIn Profile</a></p>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a software engineering student with experience in full-stack development and machine learning. 
+      I have built scalable web applications and ML models during internships, improving performance and efficiency. 
+      Skilled in Python, Java, React, and SQL, I enjoy solving real-world problems with technology.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card"><b>Programming:</b> C, Python, Java (OOPs)</div>
+      <div class="card"><b>Web:</b> HTML, CSS, JavaScript, ReactJS</div>
+      <div class="card"><b>Databases:</b> MySQL, Oracle</div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience">
+      <div class="card">
+        <h3>Java Full Stack Intern</h3>
+        <p><i>SteelPlant | May 2025 - June 2025</i></p>
+        <p>Built and deployed JSP + Oracle modules supporting 500+ daily users. Optimized SQL queries and backend logic, reducing response time by 40%.</p>
+      </div>
+      <div class="card">
+        <h3>ML Intern</h3>
+        <p><i>HMI Remote | May 2025 - June 2025</i></p>
+        <p>Developed ML pipelines for 50,000+ records, improving accuracy by 15%. Automated feature engineering tasks, reducing preprocessing time by 40%.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card"><b>Inventory Management System:</b> Django + MySQL app with authentication and stock tracking (70% manual work reduced).</div>
+      <div class="card"><b>Rainfall Prediction System:</b> ML model (85% accuracy) with Google Maps + Django UI for real-time forecasts.</div>
+      <div class="card"><b>Defect Management System:</b> Java full-stack (JSP, JDBC, Oracle) tool improving bug resolution by 30%.</div>
+      <div class="card"><b>CRM for Laptop Rentals:</b> Built in Salesforce; managed rentals, inventory, workflows.</div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education">
+      <div class="card"><b>B.Tech IT</b> – MVGR College of Engineering (2022-2026), CGPA: 8.44</div>
+      <div class="card"><b>Intermediate (MPC)</b> – Sri Chaitanya Junior College (2020-2022), Score: 901/1000</div>
+      <div class="card"><b>SSC</b> – Chaitanya Public School (2020), Score: 588/600</div>
+    </div>
+  </section>
+
+  <!-- Certificates -->
+  <section id="certificates">
+    <h2>Certificates & Achievements</h2>
+    <div class="certificates">
+      <div class="card">NPTEL – Cloud Computing</div>
+      <div class="card">Team Leadership, Management & Effectiveness</div>
+      <div class="card">Software Engineering – Forage Virtual Program</div>
+      <div class="card">Salesforce Developer Virtual Internship – SmartInternz</div>
+      <div class="card">Gold Medal – NCC Camp (Kho-Kho)</div>
+      <div class="card">Certified NCC Cadet</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>📧 Email: <a href="mailto:lavanyaganta0000@gmail.com">lavanyaganta0000@gmail.com</a></p>
+      <p>📞 Phone: +91 9640864079</p>
+      <p>🔗 LinkedIn: <a href="https://linkedin.com/in/ganta-lavanya-4867542b2" target="_blank">Profile</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Ganta Lavanya | Portfolio Website</p>
+  </footer>
+
+</body>
+</html>
